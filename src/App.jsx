@@ -190,11 +190,11 @@ function Home({ setPage }) {
           </div>
 
           {/* Right: photo — put tanvi-photo.jpg in /public folder */}
-          <div style={{ alignSelf:"flex-start", marginTop:"0" }}>
+          <div style={{ alignSelf:"center", marginTop:"0" }}>
             <img
               src="/tanvi-photo.jpg"
               alt="Tanvi Rumale"
-              style={{ width:"300px", height:"380px", objectFit:"cover", objectPosition:"center top", borderRadius:"12px", boxShadow:"0 24px 60px rgba(30,77,56,0.15)", display:"block" }}
+              style={{ width:"320px", height:"320px", objectFit:"cover", objectPosition:"center 15%", borderRadius:"50%", boxShadow:"0 24px 60px rgba(30,77,56,0.15)", display:"block" }}
             />
           </div>
         </div>

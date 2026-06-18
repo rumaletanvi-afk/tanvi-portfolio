@@ -80,7 +80,7 @@ function Nav({ page, setPage }) {
             {label}
           </button>
         ))}
-        <button onClick={() => window.open("/resume.pdf")} style={{ background:C.btn, color:C.white, border:"none", fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:"12px", padding:"8px 18px", borderRadius:"6px", cursor:"pointer", letterSpacing:"0.01em" }}>
+        <button onClick={() => window.open("https://drive.google.com/file/d/1kGXxlNxV6mNG-1YeKSYyZZaG2w3_cT4X/view")} style={{ background:C.btn, color:C.white, border:"none", fontFamily:"'Inter',sans-serif", fontWeight:600, fontSize:"12px", padding:"8px 18px", borderRadius:"6px", cursor:"pointer", letterSpacing:"0.01em" }}>
           Resume ↓
         </button>
       </div>
@@ -189,19 +189,13 @@ function Home({ setPage }) {
             </div>
           </div>
 
-          {/* Right: photo */}
-          {/* 
-            PHOTO SETUP: 
-            1. Put tanvi-photo.jpg into your project's /public folder
-            2. The src="/tanvi-photo.jpg" will work automatically
-          */}
-          <div style={{ flexShrink:0, position:"relative" }}>
+          {/* Right: photo — put tanvi-photo.jpg in /public folder */}
+          <div style={{ alignSelf:"flex-start", marginTop:"0" }}>
             <img
               src="/tanvi-photo.jpg"
               alt="Tanvi Rumale"
               style={{ width:"300px", height:"380px", objectFit:"cover", objectPosition:"center top", borderRadius:"12px", boxShadow:"0 24px 60px rgba(30,77,56,0.15)", display:"block" }}
             />
-            <div style={{ position:"absolute", bottom:"-12px", right:"-12px", width:"120px", height:"120px", borderRadius:"50%", background:C.light, zIndex:-1 }} />
           </div>
         </div>
       </section>
